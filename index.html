@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1
+         function todaydate(){
+            var currentdate = new Date()
+         console.log(currentdate);   
+        }
+        todaydate();
+
+        // 2
+        function names(){
+            var fname = prompt("your first name");
+            var lname = fname + " "+  prompt(" your first name");
+         console.log(lname);   
+        }
+        names();
+
+        // 3
+        function yournum(){
+            var num1 = +prompt("your first number");
+            var num2 = +prompt("your second number");
+         console.log(num1  + num2);   
+        }
+        yournum();
+
+        // 4
+        function calcu(){
+            var num1 = +prompt("your first number");
+            var num2 = +prompt("your second number");
+            var operator = prompt("operation name from these: + or - or * or /");
+            if(operator === "+"){
+            console.log(num1 + num2);
+            }
+            else if(operator === "-"){
+            console.log(num1 - num2);
+            }
+            else if(operator === "*"){
+            console.log(num1 * num2);
+            }
+            else if(operator === "/"){
+            console.log(num1 / num2);
+            }
+            else{console.log("please write the correct operator")}
+        }
+        calcu();
+
+        // 5
+        function squares(){
+            var num1 = +prompt("Enter your number");
+            var squaresNum = num1 * num1
+            console.log(squaresNum)
+        }
+        squares();
+
+        // 6
+        function counting(){
+            var num1 = +prompt("Enter START number");
+            var num2 = +prompt("Enter END number");
+            for(i=num1;i<=num2;i++){
+                console.log(i)
+            }
+        }
+        counting();
+
+        
+    </script>
+</body>
+</html>
